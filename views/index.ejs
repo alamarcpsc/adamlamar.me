@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Adam La Mar</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://npmcdn.com/react@15.3.1/dist/react.js"></script>
+    <script src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid" id="navtop" style="background-color:black;color:green;height:120px;font-size:15px;font-family:Courier;">
+    <div class="row">
+        <div class="col-xs-12">
+                <p id="typeStart"></p>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="120">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#navtop">Adam La Mar</a>
+        </div>
+        <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#navabout">About</a></li>
+                <li><a href="#navskills">Skills</a></li>
+                <li><a href="#navcontact">Contact</a></li>
+                <li><a href="#navcomments">Comments</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid" id="navabout" style="padding-top:25px">
+    <div class="page-header" align="center">
+        <h3>About</h3>
+    </div>
+    <div class="row">
+        <div class="col-xs-12" align="center">
+            <img src="/images/profile_photo.png" class="img-circle" alt="Profile Photo" width="200" height="200">
+        </div>
+    </div>
+    <div class="row" style="padding-top:25px">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8" align="left">
+            <p style="font-size:large;">
+                Computer Science graduate with a well-rounded understanding of a variety of technologies.
+                Web Development experience from the design and deployment of multiple web servers accompanied
+                by Software Development projects and hands on IT support in a business environment.
+            </p>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>
+
+<div class="container-fluid" id="navskills" style="padding-top:25px">
+    <div class="page-header" align="center">
+        <h3>Skills</h3>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-sm-4 col-xs-6" align="center">
+            <div class="skill-container">
+                <img src="/images/html_logo.png" alt="HTML Icon" width="100" height="100" />
+                <div class="overlay">
+                    <div class="skill-text">HTML</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-xs-6" align="center">
+            <div class="skill-container">
+                <img src="/images/css_logo.png" alt="CSS Icon" width="100" height="100" />
+                <div class="overlay">
+                    <div class="skill-text">CSS</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-xs-6" align="center">
+            <div class="skill-container">
+                <img src="/images/javascript_logo.png" alt="JavaScript Icon" width="100" height="100" />
+                <div class="overlay">
+                    <div class="skill-text">JavaScript</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-xs-6" align="center">
+            <div class="skill-container">
+                <img src="/images/bootstrap_logo.png" alt="Bootstrap Icon" width="100" height="100" />
+                <div class="overlay">
+                    <div class="skill-text">Bootstrap</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-xs-6" align="center">
+            <div class="skill-container">
+                <img src="/images/React_logo.png" alt="React Icon" width="100" height="100" />
+                <div class="overlay">
+                    <div class="skill-text">React</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-xs-6" align="center">
+            <div class="skill-container">
+                <img src="/images/nodejs_logo.png" alt="Node.js Icon" width="100" height="100" />
+                <div class="overlay">
+                    <div class="skill-text">Node.js</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-sm-4 col-xs-6" align="center">
+            <div class="skill-container">
+                <img src="/images/python_logo.png" alt="Python Icon" width="100" height="100" />
+                <div class="overlay">
+                    <div class="skill-text">Python</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-xs-6" align="center">
+            <div class="skill-container">
+                <img src="/images/Java_logo.png" alt="Java Icon" width="100" height="100" />
+                <div class="overlay">
+                    <div class="skill-text">Java</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-xs-6" align="center">
+            <div class="skill-container">
+                <img src="/images/cpp_logo.png" alt="C++ Icon" width="100" height="100" />
+                <div class="overlay">
+                    <div class="skill-text">C++</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-xs-6" align="center">
+            <div class="skill-container">
+                <img src="/images/sql_logo.png" alt="SQL Icon" width="100" height="100" />
+                <div class="overlay">
+                    <div class="skill-text">SQL</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-xs-6" align="center">
+            <div class="skill-container">
+                <img src="/images/mysql_logo.png" alt="MySQL Icon" width="100" height="100" />
+                <div class="overlay">
+                    <div class="skill-text">MySQL</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-xs-6" align="center">
+            <div class="skill-container">
+                <img src="/images/https_logo.png" alt="HTTPS Icon" width="100" height="100" />
+                <div class="overlay">
+                    <div class="skill-text">HTTPS</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2 col-sm-4 col-xs-6" align="center">
+            <div class="skill-container">
+                <img src="/images/express_logo.png" alt="Express Icon" width="100" height="100" />
+                <div class="overlay">
+                    <div class="skill-text">Express</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-xs-6" align="center">
+            <div class="skill-container">
+                <img src="/images/jetbrains_logo.png" alt="JetBrains Icon" width="100" height="100" />
+                <div class="overlay">
+                    <div class="skill-text">JetBrains</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-xs-6" align="center">
+            <div class="skill-container">
+                <img src="/images/heroku_logo.png" alt="Heroku Icon" width="100" height="100" />
+                <div class="overlay">
+                    <div class="skill-text">Heroku</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-xs-6" align="center">
+            <div class="skill-container">
+                <img src="/images/apache_logo.png" alt="Apache Icon" width="100" height="100" />
+                <div class="overlay">
+                    <div class="skill-text">Apache</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-xs-6" align="center">
+            <div class="skill-container">
+                <img src="/images/git_logo.png" alt="Git Icon" width="100" height="100" />
+                <div class="overlay">
+                    <div class="skill-text">Git</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-xs-6" align="center">
+            <div class="skill-container">
+                <img src="/images/github_logo.png" alt="GitHub Icon" width="100" height="100" />
+                <div class="overlay">
+                    <div class="skill-text">GitHub</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="navcontact" style="padding-top:25px">
+    <div class="page-header" align="center">
+        <h3>Contact</h3>
+    </div>
+    <div class="row">
+        <div class="col-xs-12" align="center">
+            <p style="font-size:large;">
+                Feel free to reach out to me using any of the contact info below!
+            </p>
+        </div>
+    </div>
+    <div class="row" style="margin-top:50px">
+        <div class="col-sm-4" align="center">
+            <img src="/images/email_logo.png" alt="Email Icon" width="100" height="100" />
+            <div class="well" style="margin-top:10px">
+                <a href="mailto:alamarcpsc@gmail.com">alamarcpsc@gmail.com</a>
+            </div>
+        </div>
+        <div class="col-sm-4" align="center">
+            <img src="/images/linkedin_logo.png" alt="LinkedIn Icon" width="100" height="100" />
+            <div class="well" style="margin-top:10px">
+                <a href="https://www.linkedin.com/in/alamarcpsc/">linkedin.com/in/alamarcpsc/</a>
+            </div>
+        </div>
+        <div class="col-sm-4" align="center">
+            <img src="/images/github_logo.png" alt="GitHub Icon" width="100" height="100" />
+            <div class="well" style="margin-top:10px">
+                <a href="https://github.com/alamarcpsc">github.com/alamarcpsc</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="navcomments" style="padding-top:25px;padding-bottom:300px;">
+    <div class="page-header" align="center">
+        <h3>Comments</h3>
+    </div>
+    <div class="row" style="margin-top:50px">
+        <div id="comments"></div>
+    </div>
+</div>
+
+<div class="container-fluid" style="background-color:black;color:green;height:150px;font-size:15px;font-family:Courier;">
+    <div class="row">
+        <div class="col-xs-12">
+            <p id="typeEnd"></p>
+        </div>
+    </div>
+</div>
+
+<script type="text/babel">
+
+    var AComment = React.createClass({
+
+        getInitialState: function() {
+            return {
+                editing: false
+            }
+        },
+
+        edit: function() {
+            this.setState({
+                editing: true
+            });
+        },
+
+        save: function() {
+            this.props.editComment(this.refs.newMessage.value, this.props.index);
+            this.setState({
+                editing: false
+            });
+        },
+
+        remove: function() {
+            this.props.removeComment(this.props.index);
+        },
+
+        renderOthers: function () {
+            return (
+                    <div>
+                        <p id="comments-comment">"{this.props.message}"</p>
+                        <p id="comments-user">-{this.props.signature}</p>
+                    </div>
+            );
+        },
+
+        renderSaved: function () {
+            return (
+                    <div>
+                        <p id="comments-comment">"{this.props.message}"</p>
+                        <p id="comments-user">-{this.props.signature}</p>
+                        <button onClick={this.edit} id="comments-edit">Edit</button>
+                        <button onClick={this.remove} id="comments-remove">Remove</button>
+                    </div>
+            );
+        },
+
+        renderEditing: function () {
+            return (
+                    <div>
+                        <textarea ref="newMessage" defaultValue={this.props.message} id="comments-text"></textarea>
+                        <button onClick={this.save} id="comments-save">Save</button>
+                    </div>
+            );
+        },
+
+        render: function () {
+            if(this.props.editable){
+                if(this.state.editing){
+                    return this.renderEditing();
+                }
+                else {
+                    return this.renderSaved();
+                }
+            }
+            else {
+                return this.renderOthers();
+            }
+        }
+    });
+
+    var NewComment = React.createClass({
+
+        submit: function() {
+            this.props.addComment(this.refs.newMessage.value);
+            this.refs.newMessage.value="";
+        },
+
+        render: function () {
+            return (
+                    <div>
+                        <textarea ref="newMessage" defaultValue="Fantastic!" id="comments-text"></textarea>
+                        <button onClick={this.submit} id="comments-submit">Submit</button>
+                    </div>
+            );
+        }
+    });
+
+    var Comments = React.createClass({
+
+        getInitialState: function() {
+            return {
+                commentArray: [
+                        ["JavaScript Guru", "Former Teammate", false],
+                        ["Handsome", "Mom", false]
+                ]
+            }
+        },
+
+        editComment: function(newMessage, i) {
+            var arr = this.state.commentArray;
+            arr[i][0] = newMessage;
+            this.setState({commentArray: arr});
+        },
+
+        removeComment: function(i) {
+            var arr = this.state.commentArray;
+            arr.splice(i, 1);
+            this.setState({commentArray: arr});
+        },
+
+        addComment: function(newMessage) {
+            var arr = this.state.commentArray;
+            arr.push([newMessage, "you", true]);
+            this.setState({commentArray: arr});
+        },
+
+        eachComment: function(comment, i) {
+            return (
+                    <AComment message={comment[0]} signature={comment[1]} editable={comment[2]} editComment={this.editComment} removeComment={this.removeComment} key={i} index={i} />
+            );
+        },
+
+        render: function () {
+            return (
+                    <div>
+                        {this.state.commentArray.map(this.eachComment)}
+                        <NewComment addComment={this.addComment} />
+                    </div>
+            );
+        }
+    });
+
+    ReactDOM.render(
+            <Comments />, document.getElementById("comments")
+    );
+
+</script>
+
+<script>
+    $(document).ready(function(){
+        // Add scrollspy to <body>
+        $('body').scrollspy({target: ".navbar", offset: 50});
+
+        // Add smooth scrolling on all links inside the navbar
+        $("#myNavbar a").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            }  // End if
+        });
+    });
+
+    $('#typeStart').typeIt({
+        autoStart: false
+    })
+            .tiSettings({speed: 1})
+            .tiType('$recruiter: ')
+            .tiPause(1000)
+            .tiSettings({speed: 100})
+            .tiType('info Adam La Mar')
+            .tiPause(1000)
+            .tiBreak()
+            .tiSettings({speed: 1})
+            .tiType('gathering info...')
+            .tiPause(1000)
+            .tiBreak()
+            .tiType('Full Stack Web Developer | Software Developer | Information Technology | Computer Scientist')
+            .tiBreak()
+            .tiType('$recruiter: ')
+            .tiPause(3000)
+            .tiSettings({speed: 100})
+            .tiType('help "hire"');
+
+    $('#typeEnd').typeIt({
+        autoStart: false
+    })
+            .tiSettings({speed: 1})
+            .tiType('$recruiter: help "hire"')
+            .tiPause(3000)
+            .tiBreak()
+            .tiType("HIRE - It's simple! Just send him a message using any of the contact information provided.");
+
+</script>
+
+</body>

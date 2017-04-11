@@ -1,0 +1,116 @@
+body {
+    font-family: arial, "sans-serif";
+}
+
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.affix ~ .container-fluid {
+    position: relative;
+    top: 50px;
+}
+
+.skill-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-bottom :50px
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #FFFFFF;
+}
+
+.skill-container:hover .overlay {
+    opacity: 1;
+}
+
+.skill-text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+#comments-comment {
+    font-style: italic;
+    margin-left: 40%;
+    font-size: xx-large;
+    clear: both;
+}
+
+#comments-user {
+    font-weight: bold;
+    margin-left: 50%;
+    margin-right: 10px;
+    font-size: medium;
+    float: left;
+}
+
+#comments-edit {
+    border: 1px solid #999;
+    color: #333;
+    text-align: center;
+    font: bold 11px/normal 'lucida grande', tahoma, verdana, arial, sans-serif;
+    padding: 0px 10px;
+    height: 30px;
+    border-right: none;
+    outline: none;
+}
+
+#comments-remove {
+    border: 1px solid #999;
+    color: #333;
+    text-align: center;
+    font: bold 11px/normal 'lucida grande', tahoma, verdana, arial, sans-serif;
+    padding: 0px 10px;
+    height: 30px;
+    outline: none;
+    margin-bottom: 5px;
+}
+
+#comments-text {
+    margin-left: 40%;
+    margin-bottom: -11px;
+}
+
+#comments-save {
+    border: 1px solid #999;
+    color: #333;
+    text-align: center;
+    font: bold 11px/normal 'lucida grande', tahoma, verdana, arial, sans-serif;
+    padding: 0px 10px;
+    height: 30px;
+    outline: none;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+#comments-submit {
+    border: 1px solid #999;
+    color: #333;
+    text-align: center;
+    font: bold 11px/normal 'lucida grande', tahoma, verdana, arial, sans-serif;
+    padding: 0px 10px;
+    height: 30px;
+    outline: none;
+    margin-left: 5px;
+    clear: both;
+}
