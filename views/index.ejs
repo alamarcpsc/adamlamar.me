@@ -12,13 +12,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://npmcdn.com/react@15.3.1/dist/react.js"></script>
-    <script src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 </head>
 <body>
 
-<div class="container-fluid" id="navtop" style="background-color:black;color:green;height:150px;font-size:15px;font-family:Courier;">
+<div class="container-fluid" id="navtop" style="background-color:black;color:green;height:250px;font-size:17px;font-family:Courier;">
     <div class="row">
         <div class="col-xs-12">
                 <p id="typeStart"></p>
@@ -26,7 +26,7 @@
     </div>
 </div>
 
-<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="150">
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="250">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -63,8 +63,8 @@
         <div class="col-sm-8" align="left">
             <p style="font-size:large;">
                 Computer Science graduate with a well-rounded understanding of a variety of technologies.
-                Web Development experience from the design and deployment of multiple web servers accompanied
-                by Software Development projects and hands on IT support in a business environment.
+                Experience with Full Stack Web Development from the design and deployment of multiple web
+                servers accompanied by Software Development projects and hands on IT support in a business environment.
             </p>
         </div>
         <div class="col-sm-2"></div>
@@ -186,9 +186,9 @@
         </div>
         <div class="col-lg-2 col-sm-4 col-xs-6" align="center">
             <div class="skill-container">
-                <img src="/images/jetbrains_logo.png" alt="JetBrains Icon" width="100" height="100" />
+                <img src="/images/digitalocean_logo.png" alt="DigitalOcean Icon" width="100" height="100" />
                 <div class="overlay">
-                    <div class="skill-text">JetBrains</div>
+                    <div class="skill-text">DigitalOcean</div>
                 </div>
             </div>
         </div>
@@ -269,7 +269,7 @@
     </div>
 </div>
 
-<div class="container-fluid" style="background-color:black;color:green;height:150px;font-size:15px;font-family:Courier;">
+<div class="container-fluid" style="background-color:black;color:green;height:150px;font-size:17px;font-family:Courier;">
     <div class="row">
         <div class="col-xs-12">
             <p id="typeEnd"></p>
@@ -317,7 +317,7 @@
             return (
                     <div>
                         <p id="comments-comment">"{this.props.message}"</p>
-                        <p id="comments-user">-{this.props.signature}</p>
+                        <p id="comments-you">-{this.props.signature}</p>
                         <button onClick={this.edit} id="comments-edit">Edit</button>
                         <button onClick={this.remove} id="comments-remove">Remove</button>
                     </div>
@@ -418,29 +418,20 @@
 
 <script>
     $(document).ready(function(){
-        // Add scrollspy to <body>
         $('body').scrollspy({target: ".navbar", offset: 50});
 
-        // Add smooth scrolling on all links inside the navbar
         $("#myNavbar a").on('click', function(event) {
-            // Make sure this.hash has a value before overriding default behavior
             if (this.hash !== "") {
-                // Prevent default anchor click behavior
                 event.preventDefault();
-
-                // Store hash
                 var hash = this.hash;
 
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                 $('html, body').animate({
                     scrollTop: $(hash).offset().top
                 }, 800, function(){
 
-                    // Add hash (#) to URL when done scrolling (default click behavior)
                     window.location.hash = hash;
                 });
-            }  // End if
+            }
         });
     });
 
@@ -448,10 +439,10 @@
         autoStart: false
     })
             .tiSettings({speed: 1})
-            .tiType('$recruiter: ')
+            .tiType('<k>recruiter:> ')
             .tiPause(1000)
             .tiSettings({speed: 100})
-            .tiType('info Adam La Mar')
+            .tiType('GatherInfo Adam La Mar')
             .tiPause(1000)
             .tiBreak()
             .tiSettings({speed: 1})
@@ -460,7 +451,7 @@
             .tiBreak()
             .tiType('Full Stack Web Developer | Software Developer | Information Technology | Computer Scientist')
             .tiBreak()
-            .tiType('$recruiter: ')
+            .tiType('<k>recruiter:> ')
             .tiPause(3000)
             .tiSettings({speed: 100})
             .tiType('help "hire"');
@@ -469,7 +460,7 @@
         autoStart: false
     })
             .tiSettings({speed: 1})
-            .tiType('$recruiter: help "hire"')
+            .tiType('<k>recruiter:> help "hire"')
             .tiPause(3000)
             .tiBreak()
             .tiType("HIRE - It's simple! Just send him a message using any of the contact information provided.");

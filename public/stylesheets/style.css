@@ -61,6 +61,13 @@ body {
     margin-left: 50%;
     margin-right: 10px;
     font-size: medium;
+}
+
+#comments-you {
+    font-weight: bold;
+    margin-left: 50%;
+    margin-right: 10px;
+    font-size: medium;
     float: left;
 }
 
@@ -84,6 +91,7 @@ body {
     height: 30px;
     outline: none;
     margin-bottom: 5px;
+    cleart: both;
 }
 
 #comments-text {
@@ -112,5 +120,4 @@ body {
     height: 30px;
     outline: none;
     margin-left: 5px;
-    clear: both;
 }
