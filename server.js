@@ -12,9 +12,16 @@ var credentials = {
 };
 */
 
-http.createServer(app).listen(80, function () {
-    console.log('http server listening on port: 80');
+var httpServer  = http.createServer(app);
+
+httpServer.listen(80);
+httpServer.on('error', function(err) {
+    console.log('error:' + err);
 });
+httpServer.on('listening', function(){
+    console.log('Listening on port: ' + 80);
+});
+
 /*
 https.createServer(credentials, app).listen(443, function () {
     console.log('https server listening on port: 443');
