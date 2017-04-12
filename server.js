@@ -6,8 +6,8 @@ var http  = require('http'),
     app   = require('./app');
 
 var credentials = {
-    key: fs.readFileSync('./certificates/adamlamar.me.key'),
-    cert: fs.readFileSync('./certificates/www_adamlamar_me_cert.cer')
+    key: fs.readFileSync('/../../../etc/letsencrypt/0001_key-certbot.pem'),
+    cert: fs.readFileSync('/../../../etc/letsencrypt/0001_csr-certbot.pem')
 };
 
 http.createServer(app).listen(80, function () {
